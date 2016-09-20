@@ -84,8 +84,8 @@
 			CGContextStrokePath(ctx);
 		}else{
 			NSArray *colors = @[
-								[[colorRegionArray objectAtIndex:0] color],
-								[[colorRegionArray objectAtIndex:1] color]
+								(id)[[colorRegionArray objectAtIndex:0] color],
+								(id)[[colorRegionArray objectAtIndex:1] color]
 								];
 			[self drawGradientColor:ctx
 								rect:CGRectMake(leftSpacing, topSpacing, 320 - leftSpacing, chartsContentHeight)
